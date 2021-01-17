@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Page</title>
+    <script async src="main.js"></script> 
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <main>
+            <div>
+                <h1>eshop generator</h1>
+                <h2>enter your product and click submit to preview it on the products' page</h2>
+            </div>
+            <section>
+                <div>
+                    <label for="img">Add the link for the product image:</label>
+                    <input type="url" name="img" id="img" placeholder="Image URL">
+                </div>
+                
+                <div>
+                    <label for="title">Add the product title:</label>
+                    <input type="text" name="title" id="title" placeholder="Product Title">
+                </div>
+                
+                <div>
+                    <label for="price">Add the product price:</label>
+                    <input type="text" name="" id="price" placeholder="Product Price in EUR">
+                </div>
+                
+                <div>
+                    <label for="exp">Add the product description:</label>
+                    <textarea name="exp" id="exp" placeholder="Please type description"></textarea>
+                </div>
+
+                <div>
+                    <label for="color">Add the available colors:</label>
+                    <input type="color" name="color" id="color">
+                    <button id="add-color-btn" onclick="addColor()">+</button>
+                </div>
+
+                <div>
+                    <label>Chosen colors:</label>
+                    <div id="colors-container">
+                    </div>
+                </div>                  
+                <button id="submit-btn" onclick="cardCreator()"><a href="card_page.html">Submit</a></button>
+            </section>
+        </div>
+    </main>
+</body>
+</html>
